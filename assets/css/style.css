@@ -1,23 +1,55 @@
 /* fonts from googlefonts */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap');
 
+/* Global */
+* {
+    max-width: 1920px;
+    margin: auto;
+}
+
 body {
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed;
+    background-position: center;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Headings */
+.heading > h1 {
+    font-family: "Indie Flower", sans-serif;
+    font-weight: 600;
+    font-size: xxx-large;
+    text-transform: uppercase;
+}
+
+#head-box {
+    display: flex;
+    margin: 80px 0 60px 0;
 }
 
 #head-text {
-    display: flex;
-    justify-content: center;
-    margin: 35px 20px 20px 20px;
-}
-
-#header {
-    font-family: "Indie Flower", sans-serif;
-    font-weight: 600;
-    font-size: 300%;
-    text-transform: uppercase;
     transform: rotate(-12deg);
 }
+
+/* Intro text and navigation area */
+#intro-box {
+    max-width: 480px;
+}
+
+.game-nav {
+    max-width: 300px;
+    padding-top: 50px;
+}
+
+#play-classic {
+    padding-bottom: 10px;
+}
+
+.buttons {
+    max-width: 200px;
+    padding-top: 50px;
+}
+
+/* Footer */
