@@ -8,18 +8,21 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png">
+    <!-- Favicon and css stylesheet links -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>RPS-GAME</title>
 </head>
 
 <body>
-    <!--The header-->
-    <header>
+    <!-- Landing page -->
+    <header class="heading">
         <h1>Rock, paper or scissors !</h1>
     </header>
-    <!--The first section with history of the game-->
-    <section>
+    
+    <!-- Welcome text with a short text of the game history -->
+    <div class="intro-text" id="story">
         <h2>JAPAN'S MOST DANGEROUS GAME: ROCK, PAPER, SCISSORS</h2>
         <p>If you've ever needed help making a small decision like who gets the last piece of pizza or who gets to ride
             shotgun, you're probably more than familiar with the game of rock, paper, scissors.
@@ -30,23 +33,26 @@
             It wasn't until the 1700s that it made its way over to Japan.
             <br><br>
             The rest, as they say, is history.
-            <a href="https://www.tofugu.com/japan/janken/" target="blank"><strong><em>Citation: Tofugu </em></strong></a>
+            <a href="https://www.tofugu.com/japan/janken/" target="blank"><strong><em>Citation: Tofugu</em></strong></a>
         </p>
-    </section>
-    <!--The second section with links to the different games-->
-    <section>
-        <div>
-            <a href=""><h2>Play the classic game !</h2></a>
-            <a href=""><h2>Play the classic game !</h2></a>
-        </div>
-    </section>
-    <!--The third section with buttons for the rules and highscores-->
-    <section>
-        <div>
-            <button>RULES</button>
-            <button>HIGHSCORES</button>
-        </div>
-    </section>
+    </div>
+
+    <!-- Links for the different game modes -->
+    <div class="game-nav">
+        <a id="play-classic" href="">
+            <h2>Play the classic game !</h2>
+        </a>
+        <a id="play-modern" href="">
+            <h2>Play the classic game !</h2>
+        </a>
+    </div>
+
+    <!-- links for rules and highscores -->
+    <div class="buttons">
+        <button id="rules">RULES</button>
+        <button id="highscores">HIGHSCORES</button>
+    </div>
+
     <!--The footer with social links-->
     <footer>
         <ul id="social-links">
@@ -64,8 +70,9 @@
             </li>
         </ul>
     </footer>
-    <!--Font awesome script-->
+    <!-- scripts -->
     <script src="https://kit.fontawesome.com/c90e65d279.js" crossorigin="anonymous"></script>
+    <script src="assets/javascript/my_scripts.js"></script>
 </body>
 
 </html>

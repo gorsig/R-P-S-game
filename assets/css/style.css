@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap');
+
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
