@@ -1,21 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Favicon and css stylesheet links -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>RPS-GAME</title>
 </head>
+
 <body>
     <!-- Landing page -->
     <header class="heading" id="head-box">
         <h1 id="head-text">Round <span>1</span></h1>
     </header>
+
+    <!-- Score section -->
+    <div>
+        <p>WIN<span>0</span></p>
+        <p>TIES<span>0</span></p>
+        <p>AI WIN<span>0</span></p>
+    </div>
+
+    <!-- Play area -->
+    <div>
+        <div>user pick</div>
+        <div>ai pick</div>
+        <div>last rounds</div>
+        <div>Choices</div>
+    </div>
+
+    <!-- links for rules and highscores -->
+    <div class="buttons">
+        <a href="index.html"><button class="btns" id="home">HOME</button></a>
+        <button class="btns" id="rules">RULES</button>
+        <!-- Modal content , some of the code from w3schools.com -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>RULES !</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="classic-rules">
+                        <h3>CLASSIC MODE !</h3>
+                        <hr><br>
+                        <p><i class="far fa-hand-rock"></i> BLUNTS <i class="far fa-hand-scissors"></i></p>
+                        <p><i class="far fa-hand-scissors"></i> CUTS <i class="far fa-hand-paper"></i></p>
+                        <p><i class="far fa-hand-paper"></i> WRAPS <i class="far fa-hand-rock"></i></p>
+                        <br><br><br><br><br><br><br>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+        <button class="btns" id="highscores">HIGHSCORES</button>
+        <!-- Modal content ,  most of the code from w3schools.com -->
+        <div id="myModalTwo" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>HIGHSCORES</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="classic-rules">
+                        <h3>CLASSIC MODE !</h3>
+                        <hr><br>
+                        <p>1: Goran Sigeskog <span> 0 </span></p>
+                    </div>
+                    <div class="modern-rules">
+                        <h3>MODERN MODE !</h3>
+                        <hr><br>
+                        <p>1: Goran Sigeskog <span> 0 </span></p>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
 
     <!--The footer with social links-->
     <footer>
@@ -36,4 +102,5 @@
     <script src="https://kit.fontawesome.com/c90e65d279.js" crossorigin="anonymous"></script>
     <script src="assets/javascript/my_scripts.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-// Get the modal, most of the code from w3school.com
+// Get the modal, some of the code from w3school.com
 let modal = document.getElementById("myModal");
 let modalTwo = document.getElementById("myModalTwo")
 let btnRules = document.getElementById("rules"); // Get the button that opens the modal
@@ -18,7 +18,7 @@ btnHighscores.onclick = function () {
 span.onclick = function () {
     modal.style.display = "none";
 }
-span2.onclick = function() {
+span2.onclick = function () {
     modalTwo.style.display = "none";
 }
 

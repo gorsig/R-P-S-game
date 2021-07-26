@@ -63,20 +63,15 @@ body {
     text-align: center;
 }
 
-#rules {
-    margin-bottom: 5px;
-}
-
-#rules,
-#highscores {
+.btns {
     width: 105px;
     background-color: #080808;
     color: ivory;
     border-radius: 15px;
+    margin-bottom: 5px;
 }
 
-#rules:hover,
-#highscores:hover {
+.btns:hover {
     background-color: mediumslateblue;
 }
 
