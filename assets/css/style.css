@@ -95,6 +95,10 @@ body {
     text-align: center;
 }
 
+.points {
+    font-size: larger;
+}
+
 .game {
     display: flex;
     text-align: center;
