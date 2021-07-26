@@ -75,6 +75,11 @@ body {
     border-radius: 15px;
 }
 
+#rules:hover,
+#highscores:hover {
+    background-color: mediumslateblue;
+}
+
 /* Footer */
 #social {
     font-size: xx-large;
