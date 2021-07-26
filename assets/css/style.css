@@ -135,12 +135,19 @@ body {
 
 /* Modal Body */
 .modal-body {
-    padding: 2px 16px;
+    display: flex;
+    padding: 50px 15px;
+    text-align: left;
+}
+
+#classic-rules,
+#modern-rules {
+    font-size: x-large;
 }
 
 /* Modal Footer */
 .modal-footer {
-    padding: 2px 16px;
+    height: 30px;
     background-color: indigo;
     color: white;
 }
