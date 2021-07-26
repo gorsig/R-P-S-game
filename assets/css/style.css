@@ -99,9 +99,52 @@ body {
     font-size: larger;
 }
 
-.game {
-    display: flex;
-    text-align: center;
+/* made the grid with guidance from w3school.com */
+.grid-game {
+    height: 500px;
+    display: grid;
+    grid-template-areas:
+        'user rounds ai'
+        'user choice ai'
+        'user choice ai';
+    grid-column-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ai {
+    grid-area: ai;
+}
+
+.user {
+    grid-area: user;
+}
+
+.rounds {
+    grid-area: rounds;
+}
+
+.choice {
+    grid-area: choice;
+}
+
+/* nested a grid in the above grid */
+.choice {
+    display: grid;
+    grid-template-areas: 
+            'move move move'
+            'choice-1 choice-2 choice-3';
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.move {
+    grid-area: move;
+}
+
+.choice i {
+    padding: 10px;
+    font-size: 100px;
 }
 
 /* Footer */
