@@ -13,7 +13,7 @@ body {
 }
 
 /* Headings */
-.heading > h1 {
+.heading>h1 {
     font-family: "Indie Flower", sans-serif;
     font-weight: 600;
     font-size: xxx-large;
@@ -52,6 +52,11 @@ body {
     padding-bottom: 10px;
 }
 
+#play-classic,
+#play-modern {
+    color: indigo;
+}
+
 .buttons {
     max-width: 200px;
     padding: 20px 0 25px 0;
@@ -62,7 +67,8 @@ body {
     margin-bottom: 5px;
 }
 
-#rules, #highscores {
+#rules,
+#highscores {
     width: 105px;
     background-color: #080808;
     color: ivory;
@@ -76,7 +82,7 @@ body {
     background-color: indigo;
 }
 
-#social > a {
+#social>a {
     color: black;
     padding: 5px;
 }
