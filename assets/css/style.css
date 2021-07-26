@@ -87,7 +87,7 @@ body {
     padding: 5px;
 }
 
-/* Modal box for rules and highscores, code from w3schoools.com */
+/* Modal box for rules and highscores, most of the code from w3schoools.com */
 /* The Modal (background) */
 .modal {
     display: none;
@@ -140,8 +140,8 @@ body {
     text-align: left;
 }
 
-#classic-rules,
-#modern-rules {
+.classic-rules,
+.modern-rules {
     font-size: x-large;
 }
 
