@@ -10,6 +10,7 @@
 body {
     font-family: "Raleway", sans-serif;
     box-sizing: border-box;
+    padding: 10px;
 }
 
 /* Headings */
@@ -20,10 +21,22 @@ body {
     text-transform: uppercase;
 }
 
-#head-box {
+.heading {
     display: flex;
-    margin: 60px 0;
     background-color: indigo;
+}
+
+#head-box {
+    margin: 50px 0;
+}
+
+#modern-box {
+    margin: 20px 0;
+}
+
+#rounds {
+    display: flex;
+    text-align: center;
 }
 
 #head-text {
@@ -73,6 +86,18 @@ body {
 
 .btns:hover {
     background-color: mediumslateblue;
+    cursor: pointer;
+}
+
+/* Game pages */
+.score {
+    display: flex;
+    text-align: center;
+}
+
+.game {
+    display: flex;
+    text-align: center;
 }
 
 /* Footer */
