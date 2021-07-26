@@ -8,10 +8,6 @@
 }
 
 body {
-    background-image: url(../images/background1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     font-family: "Raleway", sans-serif;
     box-sizing: border-box;
 }
@@ -27,6 +23,7 @@ body {
 #head-box {
     display: flex;
     margin: 80px 0 60px 0;
+    background-color: indigo;
 }
 
 #head-text {
@@ -36,11 +33,19 @@ body {
 /* Intro text and navigation area */
 #intro-box {
     max-width: 480px;
+    font-size: 15px;
+}
+
+#citation {
+    color: #3a3a3a;
+    font-size: x-small;
 }
 
 .game-nav {
     max-width: 300px;
     padding-top: 50px;
+    font-family: "Indie Flower", sans-serif;
+    text-align: center;
 }
 
 #play-classic {
@@ -49,7 +54,25 @@ body {
 
 .buttons {
     max-width: 200px;
-    padding-top: 50px;
+    padding: 25px 0;
+    text-align: center;
+}
+
+#rules {
+    margin-bottom: 5px;
+}
+
+#rules, #highscores {
+    width: 105px;
 }
 
 /* Footer */
+#social {
+    font-size: xx-large;
+    display: flex;
+    background-color: indigo;
+}
+
+#social > a {
+    color: black;
+}
