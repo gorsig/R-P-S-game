@@ -31,7 +31,7 @@ body {
 }
 
 .head-box {
-    margin: 40px 0 10px;
+    margin: 70px 0 10px;
 }
 
 #head-text {
@@ -72,6 +72,11 @@ body {
 #play-classic,
 #play-modern {
     color: indigo;
+}
+
+#play-classic:hover,
+#play-modern:hover {
+    transform: scale(1.2);
 }
 
 .buttons {
@@ -117,9 +122,7 @@ body {
         'user choice ai'
         'user choice ai';
     grid-column-gap: 10px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .ai {
@@ -165,13 +168,13 @@ body {
             'move move move'
             'choice-1 choice-2 choice-3'
             'choice-4 . choice-5';
-    grid-template-rows: 0fr 2fr 2fr;
-    grid-template-columns: auto;
     border-top: 5px solid indigo;
 }
 
 .move {
     grid-area: move;
+    padding: 5px
+    ;
 }
 
 .choice-2 {
@@ -198,6 +201,7 @@ body {
 .choice i:hover {
     color: indigo;
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 .icon-modern {
@@ -206,6 +210,10 @@ body {
 
 .icon-classic {
     padding: 10px 20px 15px 5px;
+}
+
+#choice-icons {
+    display: flex;
 }
 
 .play-buttons {
