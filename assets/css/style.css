@@ -137,7 +137,7 @@ body {
     width: 425px;
 }
 
-.rounds {
+#last-rounds {
     display: none;
     grid-area: rounds;
     flex-direction: column;
@@ -225,7 +225,7 @@ body {
     align-items: center;
 }
 
-/* Modal box for rules and highscores, most of the code from w3schoools.com */
+/* Modal box for rules and highscores, some of the code from w3schoools.com */
 .modal {
     display: none;
     position: fixed;

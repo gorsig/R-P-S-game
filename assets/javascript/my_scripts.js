@@ -1,9 +1,9 @@
-// Get the modal, some of the code from w3school.com
+// some of the code for modals from w3school.com
 let modal = document.getElementById("myModal");
 let modalTwo = document.getElementById("myModalTwo")
-let btnRules = document.getElementById("rules"); // Get the button that opens the modal
-let btnHighscores = document.getElementById("highscores"); // Get the button that opens the modal
-let span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
+let btnRules = document.getElementById("rules"); 
+let btnHighscores = document.getElementById("highscores"); 
+let span = document.getElementsByClassName("close")[0]; 
 let span2 = document.getElementsByClassName("close")[1];
 
 // When the user clicks on the button, open the modal
@@ -32,3 +32,31 @@ window.onclick = function (event) {
     }
 }
 
+// getting the elements for classic game 
+let userScores = document.getElementById("player-score")
+let computerScores = document.getElementById("ai-score")
+let tieScores = document.getElementById("tie-score")
+let roundScores = document.getElementById("round-count")
+let rounds = document.getElementById("last-rounds")
+let buttons = document.querySelectorAll(".selections")
+let showUserChoice = document.querySelector(".user i")
+let showComputerChoice = document.querySelector(".ai i")
+let randomClasses = ["far fa-hand-rock", "far fa-hand-paper","far fa-hand-scissors"]
+
+// setting forEach function to buttons
+let game = () => {
+    buttons.forEach(btn => {
+        btn.addEventListener("click", (play) => {
+            // after clicked display the various result
+            let clickedBtn = play.target.className
+            showUserChoice.className = clickedBtn
+            let randomNum = Math.floor(Math.random() * randomClasses.length)
+            showComputerChoice.className = randomClasses[randomNum]
+            // Game score
+            // if it is a tie
+
+        })  
+    })
+}
+
+game()
