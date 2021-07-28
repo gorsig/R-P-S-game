@@ -45,7 +45,7 @@ body {
     font-size: 16px;
 }
 
-#intro-box > div {
+#intro-box>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +103,7 @@ body {
     display: flex;
 }
 
-.score > div {
+.score>div {
     display: flex;
     flex-direction: column;
     padding-left: 13px;
@@ -142,6 +142,8 @@ body {
     grid-area: rounds;
     flex-direction: column;
     text-align: center;
+    width: 367px;
+    min-height: 248px;
 }
 
 #result {
@@ -150,11 +152,12 @@ body {
 
 #result-box {
     padding-right: 15px;
+    margin-top: 20px;
 }
 
 #player,
 #computer {
-    width: 40px;
+    width: 50px;
 }
 
 .choice {
@@ -164,17 +167,16 @@ body {
 /* nested a grid in the above grid */
 .choice {
     display: grid;
-    grid-template-areas: 
-            'move move move'
-            'choice-1 choice-2 choice-3'
-            'choice-4 . choice-5';
+    grid-template-areas:
+        'move move move'
+        'choice-1 choice-2 choice-3'
+        'choice-4 . choice-5';
     border-top: 5px solid indigo;
 }
 
 .move {
     grid-area: move;
-    padding: 5px
-    ;
+    padding: 5px;
 }
 
 .choice-2 {
@@ -193,7 +195,7 @@ body {
     font-size: 100px;
 }
 
-.grid-game > div > i {
+.grid-game>div>i {
     font-size: 200px;
     padding: 100px;
 }
