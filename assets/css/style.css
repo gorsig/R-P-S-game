@@ -30,20 +30,15 @@ body {
     margin: 50px 0;
 }
 
-#modern-box {
+.head-box {
     margin: 20px 0;
-}
-
-#rounds {
-    display: flex;
-    text-align: center;
 }
 
 #head-text {
     transform: rotate(-12deg);
 }
 
-/* Intro text and navigation area */
+/* Intro text */
 #intro-box {
     display: flex;
     max-width: 480px;
@@ -62,6 +57,7 @@ body {
     font-size: x-small;
 }
 
+/* navigation area */
 .game-nav {
     max-width: 300px;
     padding: 40px 0 30px 0;
@@ -112,6 +108,12 @@ body {
 
 .points {
     font-size: larger;
+    font-weight: 600;
+}
+
+#rounds {
+    display: flex;
+    text-align: center;
 }
 
 /* made the grid with guidance from w3school.com */
@@ -147,7 +149,7 @@ body {
 
 /* nested a grid in the above grid */
 .choice {
-    width: 100%;
+    height: 50%;
     display: grid;
     grid-template-areas: 
             'move move move'
@@ -175,7 +177,7 @@ body {
 }
 
 .choice i {
-    padding: 10px;
+    padding: 10px 5px 0px 5px;
     font-size: 100px;
 }
 
@@ -201,7 +203,6 @@ body {
 }
 
 /* Modal box for rules and highscores, most of the code from w3schoools.com */
-/* The Modal (background) */
 .modal {
     display: none;
     position: fixed;
@@ -253,8 +254,8 @@ body {
     text-align: left;
 }
 
-.classic-rules,
-.modern-rules {
+.classic,
+.modern {
     font-size: x-large;
 }
 
