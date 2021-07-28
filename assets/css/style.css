@@ -177,8 +177,15 @@ body {
 }
 
 .choice i {
-    padding: 10px 5px 0px 5px;
     font-size: 100px;
+}
+
+.icon-modern {
+    padding: 5px 30px 5px 5px;
+}
+
+.icon-classic {
+    padding: 10px 20px 5px 5px;
 }
 
 .play-buttons {
@@ -186,6 +193,8 @@ body {
     padding: 20px 0 25px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer */
@@ -252,6 +261,10 @@ body {
     display: flex;
     padding: 50px 15px;
     text-align: left;
+}
+
+.block-center {
+    margin-left: 30px;
 }
 
 .classic,
