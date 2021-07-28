@@ -101,8 +101,6 @@ body {
 .score > div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-left: 13px;
 }
 
@@ -111,14 +109,8 @@ body {
     font-weight: 600;
 }
 
-#rounds {
-    display: flex;
-    text-align: center;
-}
-
 /* made the grid with guidance from w3school.com */
 .grid-game {
-    height: 500px;
     display: grid;
     grid-template-areas:
         'user rounds ai'
@@ -127,20 +119,39 @@ body {
     grid-column-gap: 10px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 5px solid indigo;
     margin-top: 5px;
 }
 
 .ai {
     grid-area: ai;
+    border: 5px solid indigo;
+    width: 425px;
 }
 
 .user {
     grid-area: user;
+    border: 5px solid indigo;
+    width: 425px;
 }
 
 .rounds {
+    display: none;
     grid-area: rounds;
+    flex-direction: column;
+    text-align: center;
+}
+
+#result {
+    display: flex;
+}
+
+#result-box {
+    padding-right: 15px;
+}
+
+#player,
+#computer {
+    width: 40px;
 }
 
 .choice {
@@ -149,7 +160,6 @@ body {
 
 /* nested a grid in the above grid */
 .choice {
-    height: 50%;
     display: grid;
     grid-template-areas: 
             'move move move'
@@ -181,7 +191,8 @@ body {
 }
 
 .grid-game > div > i {
-    font-size: 130px;
+    font-size: 200px;
+    padding: 100px;
 }
 
 .choice i:hover {
@@ -204,20 +215,6 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-}
-
-/* Footer */
-#social {
-    font-size: xx-large;
-    display: flex;
-    background-color: indigo;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#social>a {
-    color: black;
-    padding: 5px;
 }
 
 /* Modal box for rules and highscores, most of the code from w3schoools.com */
@@ -312,4 +309,18 @@ body {
         top: 0;
         opacity: 1
     }
+}
+
+/* Footer */
+#social {
+    font-size: xx-large;
+    display: flex;
+    background-color: indigo;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#social>a {
+    color: black;
+    padding: 5px;
 }

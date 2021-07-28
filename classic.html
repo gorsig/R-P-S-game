@@ -36,9 +36,21 @@
 
     <!-- Play area, made the grid with guidance from w3school.com -->
     <div id="game-area" class="grid-game">
-        <div id="user-choice" class="user"></div>
-        <div id="ai-choice" class="ai"></div>
-        <div id="last-rounds" class="rounds"></div>
+        <div id="user-choice" class="user"><i class="far fa-hand-rock"></i></div>
+        <div id="ai-choice" class="ai"><i class="far fa-hand-rock"></i></div>
+        <div id="last-rounds" class="rounds">
+            <div id="result-box">
+                <div>
+                    <h3>ROUNDS</h3>
+                    <hr>
+                </div>
+                <div id="result">
+                    <div id="player"><i class="far fa-hand-rock"></i></div>
+                    <div id="round-count"><span>0</span></div>
+                    <div id="computer"><i class="far fa-hand-rock"></i></div>
+                </div>
+            </div>
+        </div>
         <div id="choice-area" class="choice">
             <div id="play-text" class="move">
                 <h3 id="play-txt">Make your move...</h3>
