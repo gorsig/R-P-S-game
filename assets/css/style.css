@@ -27,11 +27,11 @@ body {
 }
 
 #head-box {
-    margin: 50px 0;
+    margin: 70px 0 50px;
 }
 
 .head-box {
-    margin: 20px 0;
+    margin: 40px 0 10px;
 }
 
 #head-text {
@@ -89,7 +89,7 @@ body {
 }
 
 .btns:hover {
-    background-color: mediumslateblue;
+    background-color: indigo;
     cursor: pointer;
 }
 
@@ -103,7 +103,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    padding-left: 13px;
 }
 
 .points {
@@ -180,12 +180,21 @@ body {
     font-size: 100px;
 }
 
+.grid-game > div > i {
+    font-size: 130px;
+}
+
+.choice i:hover {
+    color: indigo;
+    cursor: pointer;
+}
+
 .icon-modern {
     padding: 5px 30px 5px 5px;
 }
 
 .icon-classic {
-    padding: 10px 20px 5px 5px;
+    padding: 10px 20px 15px 5px;
 }
 
 .play-buttons {
