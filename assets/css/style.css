@@ -2,15 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap');
 
 /* Global */
-* {
-    max-width: 1920px;
-    margin: auto;
-}
-
 body {
     font-family: "Raleway", sans-serif;
     box-sizing: border-box;
     padding: 10px;
+    max-width: 1920px;
+    margin: auto;
 }
 
 /* Headings */
@@ -19,6 +16,10 @@ h1 {
     font-weight: 600;
     font-size: xxx-large;
     text-transform: uppercase;
+}
+
+h2 {
+    margin: 0;
 }
 
 .heading {
@@ -36,13 +37,14 @@ h1 {
 
 #head-text {
     transform: rotate(-12deg);
+    margin: auto;
 }
 
 /* Intro text */
 #intro-box {
-    display: flex;
     max-width: 480px;
     font-size: 16px;
+    margin: auto;
 }
 
 #intro-box>div {
@@ -59,14 +61,9 @@ h1 {
 
 /* navigation area */
 .game-nav {
-    max-width: 300px;
-    padding: 40px 0 30px 0;
     font-family: "Indie Flower", sans-serif;
     text-align: center;
-}
-
-#play-classic {
-    padding-bottom: 10px;
+    margin: auto;
 }
 
 #play-classic,
@@ -80,9 +77,9 @@ h1 {
 }
 
 .buttons {
-    max-width: 200px;
     padding: 20px 0 25px 0;
-    text-align: center;
+    display: grid;
+    justify-content: center;
 }
 
 .btns {
@@ -101,12 +98,14 @@ h1 {
 /* Game pages */
 .score {
     display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .score>div {
     display: flex;
     flex-direction: column;
-    padding-left: 13px;
+    width: 78px;
 }
 
 .points {
@@ -123,6 +122,8 @@ h1 {
         'user choice ai';
     grid-column-gap: 10px;
     margin-top: 10px;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 .ai {
@@ -142,24 +143,22 @@ h1 {
     grid-area: rounds;
     flex-direction: column;
     text-align: center;
-    width: 367px;
-    min-height: 248px;
+    align-items: center;
+    min-height: 220px;
 }
 
 #result {
     display: flex;
     font-size: 30px;
-}
-
-#result-box {
-    padding-right: 15px;
-    margin-top: 20px;
+    justify-content: center;
 }
 
 #player,
 #computer {
     width: 50px;
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .choice {
@@ -177,8 +176,9 @@ h1 {
 }
 
 .move {
+    display: flex;
     grid-area: move;
-    padding: 5px;
+    justify-content: center;
 }
 
 .choice-2 {
@@ -217,12 +217,11 @@ h1 {
 }
 
 .play-buttons {
-    max-width: 270px;
+    max-width: 267px;
     padding: 20px 0 25px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
 }
 
 /* Modal box for rules and highscores, some of the code from w3schoools.com */
@@ -246,6 +245,7 @@ h1 {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    text-align: center;
 }
 
 /* The Close Button */
@@ -265,7 +265,7 @@ h1 {
 
 /* Modal Header */
 .modal-header {
-    padding: 2px 16px;
+    padding: 2px;
     background-color: indigo;
     color: white;
 }
@@ -273,8 +273,16 @@ h1 {
 /* Modal Body */
 .modal-body {
     display: flex;
-    padding: 50px 15px;
     text-align: left;
+    justify-content: space-evenly;
+}
+
+.modal-body hr {
+    border: 2px solid indigo;
+}
+
+.modal-modern {
+    text-align: center;
 }
 
 .block-center {
@@ -283,7 +291,7 @@ h1 {
 
 .classic,
 .modern {
-    font-size: x-large;
+    font-size: larger;
 }
 
 /* Modal Footer */
@@ -300,7 +308,7 @@ h1 {
     margin: 100px auto;
     padding: 0;
     border: 1px solid #888;
-    width: 50%;
+    width: 30%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
     animation-duration: 0.4s
