@@ -46,7 +46,7 @@ let uScores = 1
 let cScores = 1
 let tScores = 1
 let tScoresRes = 1
-
+// With guidance from slackoverflow.com
 let game = () => {
     // setting forEach function to buttons
     buttons.forEach(btn => {
