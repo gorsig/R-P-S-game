@@ -32,6 +32,7 @@ window.onclick = function (event) {
     }
 }
 
+// with some help from stackoverflow.com
 // getting the elements
 let userScores = document.getElementById("player-score")
 let computerScores = document.getElementById("ai-score")
@@ -39,6 +40,7 @@ let tieScores = document.getElementById("tie-score")
 let roundScores = document.getElementById("round-count")
 let rounds = document.getElementById("last-rounds")
 let roundRes = document.getElementById("round-count")
+let resultBox = document.getElementById("result")
 let buttons = document.querySelectorAll(".selections")
 let showUserChoice = document.querySelector(".user i")
 let showComputerChoice = document.querySelector(".ai i")
@@ -50,15 +52,14 @@ let cScores = 0
 let tScores = 0
 let tScoresRes = 1
 
-
 // setting forEach function to buttons
 let game = () => {
     buttons.forEach(btn => {
         btn.addEventListener("click", (play) => {
-            // after clicked display the various result
+            // display the rounds area and updates rounds nr
             rounds.style.display = "flex"
             roundRes.innerHTML = tScoresRes++
-            // player choice and random rock paper and scissors for the computer
+            // player choice and random choice for the computer
             let clickedBtn = play.target.className
             showUserChoice.className = clickedBtn
             showUserLastchoice.className = clickedBtn

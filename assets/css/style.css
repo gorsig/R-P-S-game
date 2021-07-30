@@ -14,7 +14,7 @@ body {
 }
 
 /* Headings */
-.heading>h1 {
+h1 {
     font-family: "Indie Flower", sans-serif;
     font-weight: 600;
     font-size: xxx-large;
@@ -148,6 +148,7 @@ body {
 
 #result {
     display: flex;
+    font-size: 30px;
 }
 
 #result-box {
@@ -158,6 +159,7 @@ body {
 #player,
 #computer {
     width: 50px;
+    padding-top: 10px;
 }
 
 .choice {
