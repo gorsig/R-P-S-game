@@ -42,6 +42,7 @@ let showComputerChoice = document.querySelector(".ai i")
 let randomClasses = ["far fa-hand-rock", "far fa-hand-paper", "far fa-hand-scissors", "far fa-hand-lizard", "far fa-hand-spock"]
 let showUserLastchoice = document.querySelector(".user-result i")
 let showCompLastchoice = document.querySelector(".comp-result i")
+let resetBtn = document.getElementById("reset-btn")
 let uScores = 1
 let cScores = 1
 let tScores = 1
@@ -62,6 +63,9 @@ let game = () => {
             // display the rounds area and updates rounds nr
             rounds.style.display = "flex"
             roundScores.innerHTML = tScoresRes++
+            resetBtn.onclick = () => {
+                location.reload()
+            }
             // Game score
             // if it is a tie
             if(showUserChoice.className === showComputerChoice.className){
