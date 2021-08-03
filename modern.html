@@ -18,23 +18,22 @@
     <header class="heading head-box">
         <h1 id="head-text">MODERN GAME !</h1>
     </header>
-    <!-- Score area -->
-    <div class="score">
-        <div>
-            <h2>WIN</h2>
-            <span id="player-score" class="points">0</span>
-        </div>
-        <div>
-            <h2>TIES</h2>
-            <span id="tie-score" class="points">0</span>
-        </div>
-        <div>
-            <h2>AI WIN</h2>
-            <span id="ai-score" class="points">0</span>
-        </div>
-    </div>
     <!-- Play area, made the grid with guidance from w3school.com -->
     <div class="grid-game">
+        <div class="score">
+            <div>
+                <h2>WIN</h2>
+                <span id="player-score" class="points">0</span>
+            </div>
+            <div>
+                <h2>TIES</h2>
+                <span id="tie-score" class="points">0</span>
+            </div>
+            <div>
+                <h2>AI WIN</h2>
+                <span id="ai-score" class="points">0</span>
+            </div>
+        </div>    
         <div id="user-choice" class="user"><i class="far fa-hand-rock"></i></div>
         <div id="ai-choice" class="ai"><i class="far fa-hand-rock"></i></div>
         <div id="last-rounds" class="rounds">
@@ -44,9 +43,9 @@
                     <hr>
                 </div>
                 <div id="result">
-                    <div id="player" class="user-result"><i class="far fa-hand-rock"></i></div>
+                    <div id="player" class="user-result winner"><i class="far fa-hand-rock"></i></div>
                     <div id="round-count"><span>0</span></div>
-                    <div id="computer" class="comp-result"><i class="far fa-hand-rock"></i></div>
+                    <div id="computer" class="comp-result"><i class="far fa-hand-scissors"></i></div>
                 </div>
             </div>
         </div>

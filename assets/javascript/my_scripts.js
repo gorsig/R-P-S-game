@@ -50,12 +50,12 @@ let tScoresRes = 1
 let game = () => {
     // setting forEach function to buttons
     buttons.forEach(btn => {
-        btn.addEventListener("click", (play) => {
+        btn.addEventListener("click", (e) => {
             // display the rounds area and updates rounds nr
             rounds.style.display = "flex"
             roundRes.innerHTML = tScoresRes++
             // player choice and random choice for the computer
-            let clickedBtn = play.target.className
+            let clickedBtn = e.target.className
             showUserChoice.className = clickedBtn
             showUserLastchoice.className = clickedBtn
             let randomNum = Math.floor(Math.random() * randomClasses.length)
