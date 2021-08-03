@@ -351,13 +351,24 @@ h2 {
 }
 
 /* For smaller screens */
+@media screen and (max-width: 1316px) {
+    .modal-content {
+        width: 95%;
+    }
+}
+
 @media screen and (max-width: 620px) {
     #head-text {
         font-size: xx-large;
     }
 
     #head-box {
-        margin: 35px 0 50px;
+        margin: 45px 0 50px;
+    }
+
+    .modal-content {
+        font-size: xx-small;
+        width: 95%;
     }
 }
 
