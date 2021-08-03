@@ -61,7 +61,7 @@ let game = () => {
             showCompLastchoice.className = randomClasses[randomNum]
             // display the rounds area and updates rounds nr
             rounds.style.display = "flex"
-            roundRes.innerHTML = tScoresRes++
+            roundScores.innerHTML = tScoresRes++
             // Game score
             // if it is a tie
             if(showUserChoice.className === showComputerChoice.className){

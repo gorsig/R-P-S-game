@@ -349,3 +349,42 @@ h2 {
     color: black;
     padding: 5px;
 }
+
+/* For smaller screens */
+@media screen and (max-width: 620px) {
+    #head-text {
+        font-size: xx-large;
+    }
+
+    #head-box {
+        margin: 35px 0 50px;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    #head-text {
+        font-size: x-large;
+    }
+
+    #intro-box {
+        font-size: 11px;
+    }
+
+    #intro-box > div > h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #head-text {
+        font-size: large;
+    }
+
+    #intro-box {
+        font-size: 10px;
+    }
+
+    #intro-box > div > h2 {
+        font-size: 15px;
+    }
+}
