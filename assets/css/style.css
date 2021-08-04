@@ -359,6 +359,43 @@ h2 {
     .modal-content {
         width: 95%;
     }
+
+    .grid-game {
+        display: block;
+    }
+
+    .choice {
+        border-top: none;
+        justify-content: center;
+    }
+
+    .user, 
+    .ai {
+        display: inline-flex;
+        justify-content: center;
+        width: 250px;
+    }
+
+    .reset {
+        margin-top: 5px;
+    }
+
+    #last-rounds {
+        min-height: 0;
+    }
+
+    .head-box {
+        margin: 20px 0 10px;
+    }
+
+    .choice i {
+        font-size: 50px;
+    }
+
+    .grid-game>div>i {
+        font-size: 100px;
+        padding: 50px;
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -387,6 +424,25 @@ h2 {
 
     #intro-box > div > h2 {
         font-size: 20px;
+    }
+
+    .grid-game>div>i {
+        font-size: 85px;
+        padding: 5px;
+    }
+
+    .user, 
+    .ai {
+        width: 150px;
+    }
+
+    #result {
+        font-size: 25px;
+    }
+
+    .block-center {
+        margin-left: 0;
+        text-align: center;
     }
 }
 

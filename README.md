@@ -58,7 +58,7 @@ The primary goal of this site is to give visitors a fun time and to have a place
         * 
     * CSS
         *
-    * JvaScript
+    * JavaScript
         *
 # Bugs.
     *
@@ -77,6 +77,10 @@ The live link can be found here - https://gorsig.github.io/R-P-S-game/index.html
 
 ## Media
     *
+    *
+
+## Technologies used.
+    * 
     *
 
 ## Wireframes.

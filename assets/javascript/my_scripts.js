@@ -35,7 +35,7 @@ let tieScores = document.getElementById("tie-score")
 let roundScores = document.getElementById("round-count")
 let rounds = document.getElementById("last-rounds")
 let roundRes = document.getElementById("round-count")
-let resultBox = document.getElementById("result")
+let resultBox = document.querySelectorAll(".round")
 let buttons = document.querySelectorAll(".selections")
 let showUserChoice = document.querySelector(".user i")
 let showComputerChoice = document.querySelector(".ai i")
@@ -56,16 +56,18 @@ let game = () => {
             // player choice and random choice for the computer
             let clickedBtn = e.target.className
             showUserChoice.className = clickedBtn
-            showUserLastchoice.className = clickedBtn
             let randomNum = Math.floor(Math.random() * randomClasses.length)
             showComputerChoice.className = randomClasses[randomNum]
-            showCompLastchoice.className = randomClasses[randomNum]
             // display the rounds area and updates rounds nr
             rounds.style.display = "flex"
+            showUserLastchoice.className = clickedBtn
             roundScores.innerHTML = tScoresRes++
+            showCompLastchoice.className = randomClasses[randomNum]
             resetBtn.onclick = () => {
                 location.reload()
             }
+            // Show the last 3 rounds
+            
             // Game score
             // if it is a tie
             if(showUserChoice.className === showComputerChoice.className){
