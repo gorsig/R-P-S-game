@@ -458,4 +458,29 @@ h2 {
     #intro-box > div > h2 {
         font-size: 15px;
     }
+
+    #result-box > div > h3 {
+        margin: 0;
+    }
+
+    .choice i {
+        font-size: 30px;
+    }
+
+    .grid-game > div > i {
+        font-size: 60px;
+    }
+
+    .move {
+        margin: 0;
+    }
+
+    .user,
+    .ai {
+        width: 130px;
+    }
+
+    #result {
+        font-size: 20px;
+    }
 }
