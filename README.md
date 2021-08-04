@@ -52,18 +52,13 @@ The primary goal of this site is to give visitors a fun time and to have a place
 * Different levels of difficulty
 * More Games
 
-## Validator testing.
+# Validator testing.
 * HTML
   * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/)
 * CSS
   * No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
 * JavaScript
   * No errors were found when passing through the official [Jshint validator](https://jshint.com)
-# Bugs.
-  * 
-  *
-  *
-  *
 
 # Deployment steps.
   * The site was deployed to GitHub pages. The steps to deploy are as follows:
@@ -74,13 +69,11 @@ The primary goal of this site is to give visitors a fun time and to have a place
 
 The live link can be found here - https://gorsig.github.io/R-P-S-game/index.html
 
-## Media
-*
-*
-
 ## Technologies used.
-* 
-*
+* Balsamiq - For making the wireframes
+* HTML, CSS, JavaScript
+* gitpod - For workspace
+* github - For version control and deployment
 
 ## Wireframes.
 ![](assets/wireframes/startpage.png)
@@ -89,9 +82,12 @@ The live link can be found here - https://gorsig.github.io/R-P-S-game/index.html
 ![](assets/wireframes/modern-game.png)
 ![](assets/wireframes/modern-result.png)
 
-## Other help.
-*
-*
-*
-*
+# Credits.
+## Content
+* The icons was taken from [Font Awesom](https://www.fontawesome.com)
+* The fonts was taken from [Google Fonts](https://fonts.google.com/)
 
+## Other help.
+* Sites as, stackoverflow, w3schools, CSS-Tricks was also a big help.
+* I had help via the slack community.
+* My mentor was a big help and gave me a lot of good advice.
