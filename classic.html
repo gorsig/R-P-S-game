@@ -10,11 +10,11 @@
     <!-- Favicon and css stylesheet links -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    
     <title>RPS-GAME</title>
 </head>
 
-<body>
+<body onload="gameClassic()">
     <header class="heading head-box">
         <h1 id="head-text">CLASSIC GAME !</h1>
     </header>
@@ -33,7 +33,7 @@
                 <h2>AI WIN</h2>
                 <span id="ai-score" class="points">0</span>
             </div>
-        </div>    
+        </div>
         <div id="user-choice" class="user"><i class="far fa-hand-rock"></i></div>
         <div id="ai-choice" class="ai"><i class="far fa-hand-rock"></i></div>
         <div id="last-rounds" class="rounds">
@@ -65,7 +65,7 @@
     </div>
     <!-- links for rules and highscores -->
     <div class="play-buttons">
-        <a href="index.html"><button class="btns" id="home">HOME</button></a>
+        <button class="btns" id="home" onclick="window.location.href='/index.html'">HOME</button>
         <button class="btns" id="rules">RULES</button>
         <!-- Modal content , some of the code from w3schools.com -->
         <div id="myModal" class="modal">

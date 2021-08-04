@@ -48,23 +48,22 @@ The primary goal of this site is to give visitors a fun time and to have a place
 ![](assets/readme_media/footer.png)
 
 # Feauters left to implement.
-*
-*
-*
-*
+* Highscore section
+* Different levels of difficulty
+* More Games
 
 ## Validator testing.
 * HTML
-    * 
+  * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/)
 * CSS
-    *
+  * No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
 * JavaScript
-    *
+  * No errors were found when passing through the official [Jshint validator](https://jshint.com)
 # Bugs.
-    *
-    *
-    *
-    *
+  * 
+  *
+  *
+  *
 
 # Deployment steps.
   * The site was deployed to GitHub pages. The steps to deploy are as follows:

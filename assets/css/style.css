@@ -369,7 +369,7 @@ h2 {
         justify-content: center;
     }
 
-    .user, 
+    .user,
     .ai {
         display: inline-flex;
         justify-content: center;
@@ -422,7 +422,7 @@ h2 {
         font-size: 11px;
     }
 
-    #intro-box > div > h2 {
+    #intro-box>div>h2 {
         font-size: 20px;
     }
 
@@ -431,7 +431,7 @@ h2 {
         padding: 5px;
     }
 
-    .user, 
+    .user,
     .ai {
         width: 150px;
     }
@@ -455,11 +455,11 @@ h2 {
         font-size: 10px;
     }
 
-    #intro-box > div > h2 {
+    #intro-box>div>h2 {
         font-size: 15px;
     }
 
-    #result-box > div > h3 {
+    #result-box>div>h3 {
         margin: 0;
     }
 
@@ -467,7 +467,7 @@ h2 {
         font-size: 30px;
     }
 
-    .grid-game > div > i {
+    .grid-game>div>i {
         font-size: 60px;
     }
 
